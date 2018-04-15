@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Test Plug </title>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" href=".css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="js/AdvanceZoom1.js"></script>
+    <!--<script src="js/jquery.zoom.js" type="text/javascript"></script>-->
+</head>
+<body>
+    <form>
+        <!-- <img class="image-large" src="img/image-large.jpg" style="display:none"/>-->
+        <div class="img-wrapper" style="display:inline-block;width:100%">
+            <img src="img/image-small.jpg" width="100%">
+        </div>
+    </form>
+    <script>
+        $(document).ready(function () {
+            //$('img')
+            //.wrap('<span style="display:inline-block"></span>')
+            //.css('display', 'block')
+            //.parent()
+            //.zoom({url:"img/image-large.jpg"});
+            $('img').AdvanceZoom(
+                { url: "img/image-large.jpg" });
+        });
+    </script>
+</body>
+</html>
